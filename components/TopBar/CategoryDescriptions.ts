@@ -96,8 +96,8 @@ const categoryDescriptions: CategoryDescriptions = {
   'Android programming is the process of creating applications that run on the Android operating system. Android applications are written in Java or Kotlin programming languages.',
 
   //Design
-  design_tools:
-    'Applications used to create, prototype, and manage user interface designs and visual elements.',
+  design_color_tools:
+    'Digital resources that help artists and designers select, create, and harmonize color palettes for their projects.',
   design_tutorials:
     'Instructional resources that teach users how to create and apply design concepts, techniques, and tools effectively.',
   design_inspiration:
