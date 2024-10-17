@@ -22,8 +22,8 @@ export const TopBar: FC<TopBarProps> = ({}) => {
 
   const searchQuery = router.query.query?.toString() || ''
 
-  let cleanedCategory = ''
-  cleanedCategory = (subcategoryName || categoryName)
+  let cleanedSubcat = ''
+  cleanedSubcat = (subcategoryName || categoryName)
     .replaceAll(regEx, ' ')
     .replaceAll('search query ', '')
     .replaceAll('three d', '3D')
@@ -57,14 +57,14 @@ export const TopBar: FC<TopBarProps> = ({}) => {
         href={'/' + categoryNameLink}
         className="bg-theme-primary-light/20 border border-theme-secondary/25 dark:bg-theme-tertiary/50 dark:border dark:border-theme-primary/8 px-[10px] py-[6px] rounded-md cursor-pointer hidden md:inline-block"
       >
-        <h3>{capitalizeEachWord(cleanedCategory)}</h3>
+        <h3>{capitalizeEachWord(categoryName)}</h3>
       </Link>
       <Icons.rxSlash className="hidden md:inline-block" />
       <Link href={'/' + categoryNameLink} className="flex gap-x-2 items-center">
         <Icons.arrowBack className="md:hidden" />
       </Link>
       <div className="md:bg-theme-primary-light/20 border border-theme-secondary/25 dark:bg-theme-tertiary/50 dark:border dark:border-theme-primary/8 px-[10px] py-[6px] text-xl md:text-base rounded-md truncate ...">
-        <h3>{capitalizeEachWord(cleanedCategory)}</h3>
+        <h3>{capitalizeEachWord(cleanedSubcat)}</h3>
       </div>
       <button>
         <Icons.infoCircle
