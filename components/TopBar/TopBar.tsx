@@ -57,7 +57,7 @@ export const TopBar: FC<TopBarProps> = ({}) => {
         href={'/' + categoryNameLink}
         className="bg-theme-primary-light/20 border border-theme-secondary/25 dark:bg-theme-tertiary/50 dark:border dark:border-theme-primary/8 px-[10px] py-[6px] rounded-md cursor-pointer hidden md:inline-block"
       >
-        <h3>{capitalizeEachWord(categoryName)}</h3>
+        <h3>{capitalizeEachWord(cleanedCategory)}</h3>
       </Link>
       <Icons.rxSlash className="hidden md:inline-block" />
       <Link href={'/' + categoryNameLink} className="flex gap-x-2 items-center">
