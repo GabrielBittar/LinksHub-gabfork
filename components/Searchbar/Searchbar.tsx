@@ -66,7 +66,7 @@ export const Searchbar: React.FC<SearchbarProps> = ({
     dispatchSearch({ type: 'submit' })
     const cleanedSearchQuery = searchQuery.toLocaleLowerCase().trim()
     if (cleanedSearchQuery !== '') {
-      const { category } =  sidebarData.find((item) =>
+      const { category } = sidebarData.find((item) =>
         item.subcategory.find((subCat) => subCat.name === cleanedSearchQuery)
       ) || { category: '' }
 
